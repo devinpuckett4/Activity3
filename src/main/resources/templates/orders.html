@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/defaultTemplate}">
+<head>
+  <meta charset="UTF-8"/>
+  <title th:text="${title}">My Orders</title>
+</head>
+<body>
+  <section layout:fragment="content">
+    <h2 th:text="${title}">My Orders</h2>
+
+    <table border="1" cellpadding="6">
+      <thead>
+        <tr>
+          <th>Order Number</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:if="${orders == null or #lists.isEmpty(orders)}">
+          <td colspan="4">No Orders Available</td>
+        </tr>
+        <tr th:each="order : ${orders}">
+          <td th:text="${order.orderNo}">A123</td>
+          <td th:text="${order.productName}">Item</td>
+          <td th:text="${order.price}">0.00</td>
+          <td th:text="${order.quantity}">1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><a th:href="@{/login/}">Back to Login</a></p>
+  </section>
+</body>
+</html>
