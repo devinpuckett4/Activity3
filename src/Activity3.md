@@ -33,7 +33,7 @@ This screenshot shows the output of the orders in JSON format. Each order includ
 ## 5) Orders in XML
 ![Build success](xml.png)
 
-This screenshot shows the orders being returned in XML format. Each order is wrapped in tags like <id>, <orderNo>, <productName>, <price>, and <quantity>. It confirms that the application can serve data not only as JSON but also as XML. This makes the project more flexible for different types of systems that may consume the data.
+This screenshot shows the orders being returned in XML format. Each order is wrapped in tags like id, orderNo, productName, price, and quantity. It confirms that the application can serve data not only as JSON but also as XML. This makes the project more flexible for different types of systems that may consume the data.
 ---
 
 ## 6) Formatted JSON
