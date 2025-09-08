@@ -34,7 +34,7 @@ public class HelloWorldController {
         return "hello";
     }
 
-    // GET /hello/test3 -> hello view with two messages (ModelAndView)
+    // GET /hello/test3 -> hello view with two messages 
     @GetMapping("/test3")
     public ModelAndView printHello1() {
         ModelAndView mav = new ModelAndView("hello");
@@ -43,7 +43,6 @@ public class HelloWorldController {
         return mav;
     }
 
-    // GET /hello/test4?message=... -> hello view displays the passed message
     @GetMapping("/test4")
     public String printHelloParam(@RequestParam("message") String message, Model model) {
         model.addAttribute("message", message);
