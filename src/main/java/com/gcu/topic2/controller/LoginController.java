@@ -48,7 +48,7 @@ public class LoginController {
             return "login";
         }
 
-        // 1) Console screenshot for Part 1
+        
         service.test();
 
         // 2) Security service
