@@ -3,7 +3,7 @@
 **Course:Cst-339**  
 **Date:09/02/2025** 
 
-**Professor:Bobby Estey
+Professor:Bobby Estey
 
 
 ---
